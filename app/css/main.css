@@ -1,0 +1,117 @@
+.l-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 1em;
+  color: #fff; }
+  .l-header__logo {
+    display: inline-block;
+    max-width: 220px; }
+
+.main-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  max-width: 300px;
+  padding-top: 1em;
+  margin-right: 5em;
+  background: #333; }
+  .main-nav-toggle {
+    position: relative;
+    float: right;
+    width: 3em;
+    height: 2em; }
+    .main-nav-toggle span {
+      position: absolute;
+      right: 0.75em;
+      left: 0.75em;
+      height: 2px;
+      background: yellow; }
+      .main-nav-toggle span:first-child {
+        top: 0.5em; }
+      .main-nav-toggle span:nth-child(2) {
+        top: 50%;
+        margin-top: -1px; }
+      .main-nav-toggle span:last-child {
+        bottom: 0.5em; }
+    @media screen and (min-width: 900px) {
+      .main-nav-toggle {
+        display: none; } }
+  .main-nav__items {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  @media screen and (min-width: 900px) {
+    .main-nav__item {
+      display: inline-block; } }
+  .main-nav__link {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none; }
+  @media screen and (min-width: 900px) {
+    .main-nav {
+      position: static;
+      float: right;
+      display: block;
+      max-width: none;
+      padding: 0;
+      margin: 0;
+      background: none; } }
+
+.hero {
+  padding: 6em 1em 3em;
+  background: url("/assets/hero.jpg");
+  background-size: 50%; }
+  .hero__title {
+    margin: 0;
+    font-size: 4em;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: #fff; }
+    .hero__title span {
+      color: yellow; }
+  .hero__copy {
+    max-width: 450px;
+    padding-left: 0.5em;
+    margin: 0.5em 0 1em;
+    font-size: 1.2em;
+    border-left: 2px solid yellow;
+    color: #fff; }
+  .hero__cta {
+    display: inline-block;
+    padding: 1em 2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: yellow;
+    color: #000; }
+  @media screen and (min-width: 800px) {
+    .hero {
+      background-size: 40%; } }
+  @media screen and (min-width: 1000px) {
+    .hero {
+      background-size: 30%; } }
+  @media screen and (min-width: 1200px) {
+    .hero {
+      background-size: 20%; } }
+
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; }

@@ -1,0 +1,77 @@
+.main-nav {
+  display: none;
+
+  position: fixed;
+  top:     0;
+  right:   0;
+  bottom:  0;
+  left:    0;
+
+  overflow: auto;
+  max-width: 300px;
+  padding-top: 1em;
+  margin-right: 5em;
+
+  background: #333;
+
+  &-toggle {
+    position: relative;
+    float: right;
+    width: 3em;
+    height: 2em;
+
+    span {
+      position: absolute;
+      right: 0.75em;
+      left: 0.75em;
+      height: 2px;
+      background: yellow;
+
+      &:first-child {
+        top: 0.5em;
+      }
+      &:nth-child(2) {
+        top: 50%;
+        margin-top: -1px;
+      }
+      &:last-child {
+        bottom: 0.5em;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__items {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+
+
+    @media screen and (min-width: 900px) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 900px) {
+    position: static;
+    float: right;
+    display: block;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+}

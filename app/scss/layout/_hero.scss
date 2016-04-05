@@ -1,0 +1,47 @@
+.hero {
+  padding: 6em 1em 3em;
+  background: url('/assets/hero.jpg');
+  background-size: 50%;
+
+  &__title {
+    margin: 0;
+    font-size: 4em;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: #fff;
+
+    span {
+      color: yellow;
+    }
+  }
+
+  &__copy {
+    max-width: 450px;
+    padding-left: 0.5em;
+    margin: 0.5em 0 1em;
+    font-size: 1.2em;
+    border-left: 2px solid yellow;
+    color: #fff;
+  }
+
+  &__cta {
+    display: inline-block;
+    padding: 1em 2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: yellow;
+    color: #000;
+  }
+
+  @media screen and (min-width: 800px) {
+    background-size: 40%;
+  }
+  @media screen and (min-width: 1000px) {
+    background-size: 30%;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 20%;
+  }
+}

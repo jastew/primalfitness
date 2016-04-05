@@ -1,0 +1,17 @@
+@import 'layout/_main';
+
+body {
+  margin: 0;
+  // margin: 4.2em 0 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
