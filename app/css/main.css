@@ -48,9 +48,13 @@
     padding: 0;
     margin: 0;
     list-style-type: none; }
-  @media screen and (min-width: 900px) {
-    .main-nav__item {
-      display: inline-block; } }
+  .main-nav__item {
+    border-bottom: 1px solid transparent; }
+    .main-nav__item:hover {
+      border-bottom-color: yellow; }
+    @media screen and (min-width: 900px) {
+      .main-nav__item {
+        display: inline-block; } }
   .main-nav__link {
     display: block;
     padding: 1em;
@@ -70,6 +74,8 @@
   padding: 6em 1em 3em;
   background: url("/assets/hero.jpg");
   background-size: 50%; }
+  .hero__media {
+    display: none; }
   .hero__title {
     margin: 0;
     font-size: 4em;
@@ -93,16 +99,30 @@
     text-decoration: none;
     text-transform: uppercase;
     background: yellow;
+    border-radius: 3px;
     color: #000; }
+  @media screen and (min-width: 600px) {
+    .hero {
+      background-size: 40%; }
+      .hero__body, .hero__media {
+        display: inline-block;
+        vertical-align: middle; }
+      .hero__body {
+        width: 60%; }
+      .hero__media {
+        width: 40%; }
+        .hero__media iframe {
+          width: 100%;
+          height: 300px; } }
   @media screen and (min-width: 800px) {
     .hero {
-      background-size: 40%; } }
+      background-size: 30%; } }
   @media screen and (min-width: 1000px) {
     .hero {
-      background-size: 30%; } }
+      background-size: 20%; } }
   @media screen and (min-width: 1200px) {
     .hero {
-      background-size: 20%; } }
+      background-size: 10%; } }
 
 body {
   margin: 0;

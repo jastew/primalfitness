@@ -3,6 +3,14 @@
   background: url('/assets/hero.jpg');
   background-size: 50%;
 
+  &__body {
+
+  }
+
+  &__media {
+    display: none;
+  }
+
   &__title {
     margin: 0;
     font-size: 4em;
@@ -32,16 +40,37 @@
     text-decoration: none;
     text-transform: uppercase;
     background: yellow;
+    border-radius: 3px;
     color: #000;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     background-size: 40%;
+
+    &__body,
+    &__media {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__body {
+      width: 60%;
+    }
+    &__media {
+      width: 40%;
+
+      iframe {
+        width: 100%;
+        height: 300px;
+      }
+    }
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
     background-size: 30%;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1000px) {
     background-size: 20%;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 10%;
   }
 }

@@ -51,7 +51,11 @@
   }
 
   &__item {
+    border-bottom: 1px solid transparent;
 
+    &:hover {
+      border-bottom-color: yellow;
+    }
 
     @media screen and (min-width: 900px) {
       display: inline-block;
